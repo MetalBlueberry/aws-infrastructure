@@ -28,7 +28,7 @@ resource "aws_iam_group" "acnil-bot" {
   path = "/acnil-bot/"
 }
 
-resource "aws_iam_user_group_membership" "example1" {
+resource "aws_iam_user_group_membership" "acnil-bot-group-for-github-user" {
   user = aws_iam_user.github.name
 
   groups = [
